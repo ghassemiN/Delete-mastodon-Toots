@@ -1,5 +1,5 @@
 # Delete Mastodon Toots
-As you know there is a limitation for deleting your toots in Mastodon platform. So I just wanted to make the process a little easier. 
+As you know there is a limitation for deleting your toots in Mastodon (https://mastodon.social/) platform. So I just wanted to make the process a little easier. 
 
 ## Get toots IDs:
 open Inspect element and click on "Consol" tab and enter following lines one by one:
