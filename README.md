@@ -1,7 +1,7 @@
-# Delete-mastodon-Toots
+# Delete Mastodon Toots
 As you know there is a limitation for deleting your toots in Mastodon platform. So I just wanted to make the process a little easier. 
 
-# Get TOOTS IDs:
+## Get toots IDs:
 open Inspect element and click on "Consol" tab and enter following lines one by one:
 ```
 toots=document.querySelectorAll('article[data-id]');
@@ -10,13 +10,13 @@ toots=document.querySelectorAll('article[data-id]');
 
 Just keep the IDs and delete the rest of the information. Finally you will have a list of IDs. Save the file (your_file.txt).
 
-# FIND THE AUTH TOKEN
+## Find the auth token
 In Inspect element, open network tab then delete one toot from Mastodon and you can get the Auth Token from request header. It's something like: `Bearer YOUTR_TOKEN`
 
-# RUN THE SCRIPT
+## Run the script
 Make sure you have installed python3 on your machine. Then run it: `python3 delete_toots_mastodon.py`
 
-# CRON JOB
+## Cron job
 You need to create a cron job that runs the script every 30 minute :
 ```
 */30 * * * * /bin/python3 /PATH/delete_toots_mastodon.py >> /PATH/delete_toots_mastodon_log
